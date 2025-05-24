@@ -35,20 +35,238 @@
             android:textSize="@dimen/_15ssp" />
 
     </LinearLayout>
+
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_8sdp"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:layout_height="@dimen/_0sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/HeaderLayout" >
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/VazirMedium"
-        android:gravity="center"
-        tools:layout_editor_absoluteX="26dp" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/VazirMedium"
+                android:gravity="center"
+                android:text="لطفا فرم زیر را با دقت تکمیل کنید:"
+                android:textSize="@dimen/_15ssp"
+                android:includeFontPadding="false"
+                tools:layout_editor_absoluteX="26dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_4sdp">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_40sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5D9916"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:fontFamily="@font/VazirMedium"
+                        android:text="First Name:"
+                        android:includeFontPadding="false"
+                        android:textSize= "@dimen/_11ssp"/>
+
+
+                    <EditText
+                        android:id="@+id/fName_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:background="@null"
+                        android:fontFamily="@font/VazirMedium"
+                        android:hint="Your Name"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#A8A8A8"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5D9916"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:fontFamily="@font/VazirMedium"
+                        android:text="First Name:"
+                        android:includeFontPadding="false"
+                        android:textSize= "@dimen/_11ssp"/>
+
+
+                    <EditText
+                        android:id="@+id/lName_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:background="@null"
+                        android:fontFamily="@font/VazirMedium"
+                        android:hint="Your Family"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#A8A8A8"
+                        android:textSize="@dimen/_13ssp" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5D9916"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:fontFamily="@font/VazirMedium"
+                        android:text="E-Mail:"
+                        android:includeFontPadding="false"
+                        android:textSize= "@dimen/_11ssp"/>
+
+
+                    <EditText
+                        android:id="@+id/Email_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:background="@null"
+                        android:fontFamily="@font/VazirMedium"
+                        android:hint="sample@sample.com"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="textEmailAddress"
+                        android:minHeight="48dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#A8A8A8"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5D9916"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:fontFamily="@font/VazirMedium"
+                        android:text="Password:"
+                        android:includeFontPadding="false"
+                        android:textSize="@dimen/_11ssp"/>
+
+
+                    <EditText
+                        android:id="@+id/Password_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@null"
+                        android:fontFamily="@font/VazirVariable"
+                        android:hint="\u2022 \u2022 \u2022 \u2022 \u2022 \u2022"
+                        android:imeOptions="actionDone"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="textPassword"
+                        android:minHeight="48dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#A8A8A8"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5D9916"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:fontFamily="@font/VazirMedium"
+                    android:text="Confirm Password:"
+                    android:includeFontPadding="false"
+                    android:textSize="@dimen/_11ssp"/>
+
+
+                    <EditText
+                        android:id="@+id/Confirm_Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@null"
+                        android:fontFamily="@font/VazirVariable"
+                        android:hint="\u2022 \u2022 \u2022 \u2022 \u2022 \u2022"
+                        android:imeOptions="actionDone"
+                        android:importantForAutofill="no"
+                        android:includeFontPadding="false"
+                        android:inputType="textPassword"
+                        android:minHeight="48dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#A8A8A8"
+                        android:textSize="@dimen/_13ssp" />
+
+
+
+
+
+
+                </LinearLayout>
+                
+                
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/SignUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:fontFamily="@font/VazirMedium"
+                android:includeFontPadding="false"
+                android:text="ثبت نام"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@+id/cardSignin" />
+
+            <TextView
+                android:id="@+id/withAccountText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/VazirMedium"
+                android:gravity="center"
+                android:text="آیا اکانت دارید؟ وارد شوید."
+                android:textColor="#0D5952"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintTop_toBottomOf="@+id/SignInButton" />
+        </LinearLayout>
+    </ScrollView>
                 
 
 
